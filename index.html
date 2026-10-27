@@ -6,16 +6,16 @@
 <title>Marlo — Shawarma &amp; Street Food</title>
 <meta name="description" content="Shawarma named after world cities, loaded hot dogs, fresh sides and mousse desserts. Dine-in or takeaway, open 11:00–21:00.">
 <meta name="theme-color" content="#111111">
-<!-- Domain: https://marlo.vercel.app — if Vercel assigns a different address (or you add a custom domain), update canonical, og:url, og:image and twitter:image. -->
-<link rel="canonical" href="https://marlo.vercel.app/">
+<!-- Domain: https://marlo-tau.vercel.app — if you add a custom domain, update canonical, og:url, og:image and twitter:image. -->
+<link rel="canonical" href="https://marlo-tau.vercel.app/">
 <!-- Open Graph / link previews -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Marlo">
 <meta property="og:title" content="Marlo — Shawarma &amp; Street Food">
 <meta property="og:description" content="Shawarma named after world cities, loaded hot dogs, fresh sides and mousse desserts. Dine-in or takeaway.">
-<meta property="og:url" content="https://marlo.vercel.app/">
-<!-- og:image: file assets/og-image.jpg is 1200×630. TODO: confirm the absolute https URL resolves after deploy. -->
-<meta property="og:image" content="https://marlo.vercel.app/assets/og-image.jpg">
+<meta property="og:url" content="https://marlo-tau.vercel.app/">
+<!-- og:image: file og-image.jpg (in the site root) is 1200×630. TODO: confirm the absolute https URL resolves after deploy. -->
+<meta property="og:image" content="https://marlo-tau.vercel.app/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Marlo logo over a photo of a guest biting into a shawarma">
@@ -23,17 +23,17 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Marlo — Shawarma &amp; Street Food">
 <meta name="twitter:description" content="Shawarma named after world cities, loaded hot dogs, fresh sides and mousse desserts.">
-<meta name="twitter:image" content="https://marlo.vercel.app/assets/og-image.jpg">
+<meta name="twitter:image" content="https://marlo-tau.vercel.app/og-image.jpg">
 <!-- Icons (generated from the Marlo emblem) -->
 <link rel="icon" href="favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <!-- GA4: вставити тег тут -->
 <!-- Meta Pixel: вставити тут -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- hero image preloaded so it starts downloading before CSS/JS -->
-<link rel="preload" as="image" href="assets/hero-1200.webp" imagesrcset="assets/hero-800.webp 800w, assets/hero-1200.webp 1200w, assets/hero-1800.webp 1800w" imagesizes="100vw" fetchpriority="high">
+<link rel="preload" as="image" href="hero-1200.webp" imagesrcset="hero-800.webp 800w, hero-1200.webp 1200w, hero-1800.webp 1800w" imagesizes="100vw" fetchpriority="high">
 <!-- fonts load without blocking the first paint (display=swap shows a fallback until they arrive) -->
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wdth,wght@62..125,400..900&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wdth,wght@62..125,400..900&display=swap" media="print" onload="this.media='all'">
@@ -377,7 +377,7 @@ function heroPhotoError(img){
 <header class="site-header">
   <div class="wrap header__inner">
     <a class="logo" href="#top">
-      <img src="assets/logo-sign-white.png" alt="Marlo — back to top" width="1192" height="268">
+      <img src="logo-sign-white.png" alt="Marlo — back to top" width="1192" height="268">
     </a>
     <nav class="nav" id="site-nav" aria-label="Main">
       <ul>
@@ -395,8 +395,8 @@ function heroPhotoError(img){
 
 <!-- ======= 02 HERO ======= -->
 <section class="hero" id="top" aria-labelledby="hero-title">
-  <img class="hero__bg" src="assets/hero-1200.webp" srcset="assets/hero-800.webp 800w, assets/hero-1200.webp 1200w, assets/hero-1800.webp 1800w" sizes="100vw" alt="" width="2400" height="1354" fetchpriority="high" decoding="async">
-  <img class="hero__cut" src="assets/hero-cut-1200.webp" srcset="assets/hero-cut-800.webp 800w, assets/hero-cut-1200.webp 1200w, assets/hero-cut-1800.webp 1800w" sizes="100vw" alt="" width="2400" height="1354" decoding="async">
+  <img class="hero__bg" src="hero-1200.webp" srcset="hero-800.webp 800w, hero-1200.webp 1200w, hero-1800.webp 1800w" sizes="100vw" alt="" width="2400" height="1354" fetchpriority="high" decoding="async">
+  <img class="hero__cut" src="hero-cut-1200.webp" srcset="hero-cut-800.webp 800w, hero-cut-1200.webp 1200w, hero-cut-1800.webp 1800w" sizes="100vw" alt="" width="2400" height="1354" decoding="async">
   <div class="hero__inner">
     <div class="hero__titlewrap">
       <h1 class="hero__title" id="hero-title"><span class="sr-only">Bold Street Flavour</span><span class="hero__lines" aria-hidden="true"><span class="hero__line" style="font-size:7vw"><span>Bold Street Flavour</span></span></span></h1>
@@ -539,7 +539,7 @@ function heroPhotoError(img){
       </div>
       <div class="map">
         <iframe id="map-frame" title="Map showing the Marlo location" loading="lazy" referrerpolicy="no-referrer"></iframe>
-        <span class="map__badge" aria-hidden="true"><img loading="lazy" src="assets/logo-emblem-white.png" alt="" width="160" height="164"></span>
+        <span class="map__badge" aria-hidden="true"><img loading="lazy" src="logo-emblem-white.png" alt="" width="160" height="164"></span>
         <div class="map__fallback"><svg class="map__pin" aria-hidden="true"><use href="#i-pin"/></svg><p>Marlo</p></div>
       </div>
     </div>
@@ -551,7 +551,7 @@ function heroPhotoError(img){
 <!-- ======= 09 FOOTER ======= -->
 <footer class="site-footer">
   <div class="wrap">
-    <img class="footer__logo" src="assets/logo-sign-white.png" alt="Marlo" width="1192" height="268" loading="lazy">
+    <img class="footer__logo" src="logo-sign-white.png" alt="Marlo" width="1192" height="268" loading="lazy">
     <div class="footer__grid">
       <div>
         <h2>Explore</h2>
@@ -580,26 +580,26 @@ function heroPhotoError(img){
    ========================================================== */
 const CONTENT = {
   shawarma: [
-    { name:"Paris",   img:"assets/shawarma-paris.jpg", w:764, h:1004, desc:"Chicken, garlic sauce, cabbage, tomatoes, pickles, Korean-style carrots", price:"€11.00", tone:"green" },
-    { name:"Rome",    img:"assets/shawarma-rome.jpg", w:760, h:1004, desc:"Chicken, garlic sauce, fries, cabbage, tomatoes, pickles, Korean-style carrots", price:"€13.50", tone:"red", badge:"Best seller", tagline:"Roman classic — juicy, fresh, packed with veggies & protein." },
-    { name:"Vienna",  img:"assets/shawarma-vienna.jpg", w:764, h:1004, desc:"Chicken, garlic sauce, cabbage, tomatoes, pickles, Korean-style carrots", price:"€8.50", tone:"cream" },
-    { name:"Tokyo",   img:"assets/shawarma-tokyo.jpg", w:760, h:1004, desc:"Chicken, cheese, garlic sauce, American light sauce", price:"€15.00", tone:"corn" },
-    { name:"Hawaii",  img:"assets/shawarma-hawaii.jpg", w:800, h:1200, desc:"Chicken, garlic sauce, cabbage, sweet corn, mozzarella, cheese sauce, pineapple", price:"€13.50", tone:"pink" }
+    { name:"Paris",   img:"shawarma-paris.jpg", w:764, h:1004, desc:"Chicken, garlic sauce, cabbage, tomatoes, pickles, Korean-style carrots", price:"€11.00", tone:"green" },
+    { name:"Rome",    img:"shawarma-rome.jpg", w:760, h:1004, desc:"Chicken, garlic sauce, fries, cabbage, tomatoes, pickles, Korean-style carrots", price:"€13.50", tone:"red", badge:"Best seller", tagline:"Roman classic — juicy, fresh, packed with veggies & protein." },
+    { name:"Vienna",  img:"shawarma-vienna.jpg", w:764, h:1004, desc:"Chicken, garlic sauce, cabbage, tomatoes, pickles, Korean-style carrots", price:"€8.50", tone:"cream" },
+    { name:"Tokyo",   img:"shawarma-tokyo.jpg", w:760, h:1004, desc:"Chicken, cheese, garlic sauce, American light sauce", price:"€15.00", tone:"corn" },
+    { name:"Hawaii",  img:"shawarma-hawaii.jpg", w:800, h:1200, desc:"Chicken, garlic sauce, cabbage, sweet corn, mozzarella, cheese sauce, pineapple", price:"€13.50", tone:"pink" }
   ],
   // Names from menu materials; prices not verified
   classics: [
-    { label:"Grilled Chicken", img:"assets/fresh-chicken.jpg", w:1000, h:1113, name:"Marinated and grilled to order", art:"shawarma", tone:"green" },
-    { label:"Fresh Veg", img:"assets/fresh-veg.jpg", w:1000, h:1113, name:"Roasted veg, pickles & herbs", art:"bowl", tone:"cream" },
-    { label:"House Sauces", img:"assets/fresh-sauces.jpg", w:1000, h:899, name:"Garlic, cheese & chilli", art:"cup", tone:"corn" },
-    { label:"Warm Flatbread", img:"assets/fresh-flatbread.jpg", w:1000, h:1113, name:"Toasted on the grill", art:"plate", tone:"red" }
+    { label:"Grilled Chicken", img:"fresh-chicken.jpg", w:1000, h:1113, name:"Marinated and grilled to order", art:"shawarma", tone:"green" },
+    { label:"Fresh Veg", img:"fresh-veg.jpg", w:1000, h:1113, name:"Roasted veg, pickles & herbs", art:"bowl", tone:"cream" },
+    { label:"House Sauces", img:"fresh-sauces.jpg", w:1000, h:899, name:"Garlic, cheese & chilli", art:"cup", tone:"corn" },
+    { label:"Warm Flatbread", img:"fresh-flatbread.jpg", w:1000, h:1113, name:"Toasted on the grill", art:"plate", tone:"red" }
   ],
   // Unconfirmed — replace with real products from menu photos
-  // Dessert photos (assets/sweet-1..4.jpg). Titles describe the photo
+  // Dessert photos (sweet-1..4.jpg). Titles describe the photo
   sweets: [
-    { name:"Blueberry dessert", img:"assets/sweet-1.jpg", w:800, h:1200, alt:"Round purple blueberry mousse desserts on gold bases, with fresh blueberries", tone:"cream" },
-    { name:"Chocolate & passion fruit", img:"assets/sweet-2.jpg", w:500, h:1024, alt:"Chocolate cups filled with cream and topped with passion fruit", tone:"cream" },
-    { name:"Mango dessert", img:"assets/sweet-3.jpg", w:500, h:1024, alt:"Yellow and pink mango mousse desserts on gold bases, with fresh mango", tone:"cream" },
-    { name:"Raspberry dessert", img:"assets/sweet-4.jpg", w:493, h:1024, alt:"Red raspberry mousse rings on gold bases, with fresh raspberries", tone:"cream" }
+    { name:"Blueberry dessert", img:"sweet-1.jpg", w:800, h:1200, alt:"Round purple blueberry mousse desserts on gold bases, with fresh blueberries", tone:"cream" },
+    { name:"Chocolate & passion fruit", img:"sweet-2.jpg", w:500, h:1024, alt:"Chocolate cups filled with cream and topped with passion fruit", tone:"cream" },
+    { name:"Mango dessert", img:"sweet-3.jpg", w:500, h:1024, alt:"Yellow and pink mango mousse desserts on gold bases, with fresh mango", tone:"cream" },
+    { name:"Raspberry dessert", img:"sweet-4.jpg", w:493, h:1024, alt:"Red raspberry mousse rings on gold bases, with fresh raspberries", tone:"cream" }
   ],
   extras: [
     { name:"Cheese", price:"€1.50" },
@@ -639,7 +639,7 @@ const CONTENT = {
     { name:"Red Bull", price:"€3.00" },
     { name:"Water / Tea", price:"€2.00" }
   ],
-  // Customer reactions: { video:"<cloudinary version/id>", title } for a video, { photo:"assets/…", alt } for a photo
+  // Customer reactions: { video:"<cloudinary version/id>", title } for a video, { photo:"…", alt } for a photo
   reels: [
     { video:"v1793111217/16423619_2160_3840_60fps_1_bbhtcn", title:"Guest video reaction 1" },
     { video:"v1793111223/5780016-uhd_2160_3840_24fps_1_ajotj3", title:"Guest video reaction 2" },
